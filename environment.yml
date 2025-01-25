@@ -103,18 +103,14 @@ dependencies:
       - pyyaml==6.0.2
       - requests==2.32.3
       - safetensors==0.5.2
-      - sam-2==1.0
       - scipy==1.15.1
       - sentencepiece==0.2.0
       - six==1.17.0
       - sounddevice==0.5.1
       - sympy==1.13.1
-      - torch==2.5.1+cu118
-      - torchaudio==2.5.1+cu118
-      - torchvision==0.20.1+cu118
       - tqdm==4.67.1
       - triton==3.1.0
       - typing-extensions==4.9.0
       - tzdata==2025.1
       - urllib3==2.3.0
-prefix: /ext3/miniconda3/envs/sam2
+prefix: /ext3/miniconda3/envs/sam
