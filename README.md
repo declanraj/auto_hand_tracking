@@ -55,14 +55,15 @@ This pipeline processes videos to detect hand landmarks, generates segmentation 
    cd ..
    ```
 ## Usage
-Run script.py to generate masked video
+Run script_fix.py to generate masked video
    ```bash
    cd ..
-   # Ensure the video of interest (test.mp4) is in the source_video folder
-   mv script.py ./sam2/script.py
+   # Ensure the video of interest is in the source_video folder in mp4 format
+   mv script_fix.py ./sam2/script_fix.py
    cd sam2
    # Download the Hand Landmark model
    !wget -q https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task
 
-   python -u script.py
+   python -u script_fix.py
    ```
+   You can optionally pass the --margin and --hand arguments to specify how many pixels around the landmark detection you want to extend the bounding box (default 30) and which of the hands to track (default 'Left')
